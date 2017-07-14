@@ -24,4 +24,7 @@ routes.patch(
 );
 routes.delete('/:id', authJwt, postController.deletePost);
 
+// Favorites
+routes.post('/:id/favorite', authJwt, postController.favoritePost);
+
 export default routes;
