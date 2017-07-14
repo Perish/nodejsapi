@@ -27,7 +27,6 @@ const UserSchema = new Schema({
   },
   lastName: {
     type: String,
-    unique: true,
     required: [true, 'LastName is required!'],
     trim: true,
   },
